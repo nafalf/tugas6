@@ -1,23 +1,24 @@
-GET http://localhost:5000/users
-
+GET http://localhost:3000/users
 
 ###
-POST http://localhost:5000/add-users
+POST http://localhost:3000/add-user
 Content-Type: application/json
 
 {
-    "Title": "Judulmu",
-    "Content": "Isinya "
+    "name": "Catatan Baru Saya",
+    "date": "2025-06-03",
+    "note": "Ini adalah isi catatan pertama saya."
 }
 
 ###
-PUT http://localhost:5000/users/1
+PUT http://localhost:3000/edit-user/1
 Content-Type: application/json
 
 {
-    "Title": "Judul",
-    "Content": "Isi" 
+    "name": "Catatan Diperbarui",
+    "date": "2025-06-04",
+    "note": "Isi catatan setelah diedit."
 }
 
 ###
-DELETE http://localhost:5000/users/2
+DELETE http://localhost:3000/delete-user/2
